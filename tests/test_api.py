@@ -193,5 +193,3 @@ class TestBatchEndpoint:
         }).json()
         assert data["total_inference_ms"] > 0
 
-# Arquivo __init__.py vazio para o pytest reconhecer o pacote tests/
-touch tests/__init__.py
