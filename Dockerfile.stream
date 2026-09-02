@@ -29,7 +29,7 @@ RUN pip install --no-cache-dir torch torchvision \
     pip install --no-cache-dir -r requirements.txt
 
 COPY stream/ ./stream/
-
+COPY preprocessing/ ./preprocessing/
 EXPOSE 5000
 
 CMD ["python3", "stream/mjpeg_server.py", "--host", "0.0.0.0", "--port", "5000"]
